@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		075A147326BF993300F69F0C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075A147226BF993300F69F0C /* CloudKit.framework */; };
+		075A147526BF995E00F69F0C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075A147426BF995E00F69F0C /* CloudKit.framework */; };
 		07E0416326BF4AB700093289 /* I_Ate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07E0414D26BF4AB600093289 /* I_Ate.xcdatamodeld */; };
 		07E0416426BF4AB700093289 /* I_Ate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07E0414D26BF4AB600093289 /* I_Ate.xcdatamodeld */; };
 		07E0416526BF4AB700093289 /* IAteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E0414F26BF4AB600093289 /* IAteApp.swift */; };
@@ -24,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		075A147026BF992D00F69F0C /* I Ate (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "I Ate (iOS).entitlements"; sourceTree = "<group>"; };
+		075A147226BF993300F69F0C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		075A147426BF995E00F69F0C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		07E0414E26BF4AB600093289 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		07E0414F26BF4AB600093289 /* IAteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAteApp.swift; sourceTree = "<group>"; };
 		07E0415026BF4AB600093289 /* ReviewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewList.swift; sourceTree = "<group>"; };
@@ -43,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				075A147326BF993300F69F0C /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,19 +56,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				075A147526BF995E00F69F0C /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		075A147126BF993300F69F0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				075A147426BF995E00F69F0C /* CloudKit.framework */,
+				075A147226BF993300F69F0C /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		07E0414726BF4AB600093289 = {
 			isa = PBXGroup;
 			children = (
+				075A147026BF992D00F69F0C /* I Ate (iOS).entitlements */,
 				07E0414C26BF4AB600093289 /* Shared */,
 				07E0415926BF4AB700093289 /* iOS */,
 				07E0416026BF4AB700093289 /* macOS */,
 				07E0415826BF4AB700093289 /* Products */,
+				075A147126BF993300F69F0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -360,6 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "I Ate (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4NX3RJE9MB;
 				ENABLE_PREVIEWS = YES;
@@ -382,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "I Ate (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4NX3RJE9MB;
 				ENABLE_PREVIEWS = YES;
@@ -406,7 +426,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4NX3RJE9MB;
@@ -431,7 +451,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4NX3RJE9MB;
