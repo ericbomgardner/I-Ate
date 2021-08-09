@@ -11,6 +11,9 @@ struct ReviewDetail: View {
             TextField("Restaurant", text: $review.restaurantName ?? "")
                 .font(.title)
                 .foregroundColor(.primary)
+                .onChange(of: review.restaurantName) { newValue in
+                    viewContext.saveChanges()
+                }
 
             Divider()
 
@@ -18,6 +21,9 @@ struct ReviewDetail: View {
                 .font(.body)
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,
                        maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                .onChange(of: review.body) { newValue in
+                    viewContext.saveChanges()
+                }
         }
     }
 }
