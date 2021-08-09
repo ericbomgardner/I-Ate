@@ -49,14 +49,14 @@ struct ReviewList: View {
         withAnimation {
             let newReview = Review(context: viewContext)
             newReview.timestamp = Date()
-            try! viewContext.save()
+            viewContext.saveChanges()
         }
     }
 
     private func deleteReviews(offsets: IndexSet) {
         withAnimation {
             offsets.map { reviews[$0] }.forEach(viewContext.delete)
-            try! viewContext.save()
+            viewContext.saveChanges()
         }
     }
 }

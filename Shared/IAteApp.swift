@@ -12,7 +12,7 @@ struct IAteApp: App {
                 .environment(\.managedObjectContext, persistenceController.viewContext)
         }
         .onChange(of: scenePhase) { _ in
-            persistenceController.save()
+            persistenceController.viewContext.saveChanges()
         }
     }
 }
