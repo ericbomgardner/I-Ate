@@ -11,6 +11,8 @@
 		075A147526BF995E00F69F0C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075A147426BF995E00F69F0C /* CloudKit.framework */; };
 		075A147726C0EA2600F69F0C /* NSManagedObjectContext+Saving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A147626C0EA2600F69F0C /* NSManagedObjectContext+Saving.swift */; };
 		075A147826C0EA2600F69F0C /* NSManagedObjectContext+Saving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A147626C0EA2600F69F0C /* NSManagedObjectContext+Saving.swift */; };
+		075A147D26C0F52700F69F0C /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A147C26C0F52700F69F0C /* StarRatingView.swift */; };
+		075A147E26C0F52700F69F0C /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A147C26C0F52700F69F0C /* StarRatingView.swift */; };
 		07E0416326BF4AB700093289 /* I_Ate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07E0414D26BF4AB600093289 /* I_Ate.xcdatamodeld */; };
 		07E0416426BF4AB700093289 /* I_Ate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07E0414D26BF4AB600093289 /* I_Ate.xcdatamodeld */; };
 		07E0416526BF4AB700093289 /* IAteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E0414F26BF4AB600093289 /* IAteApp.swift */; };
@@ -32,6 +34,7 @@
 		075A147226BF993300F69F0C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		075A147426BF995E00F69F0C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		075A147626C0EA2600F69F0C /* NSManagedObjectContext+Saving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Saving.swift"; sourceTree = "<group>"; };
+		075A147C26C0F52700F69F0C /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 		07E0414E26BF4AB600093289 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		07E0414F26BF4AB600093289 /* IAteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAteApp.swift; sourceTree = "<group>"; };
 		07E0415026BF4AB600093289 /* ReviewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewList.swift; sourceTree = "<group>"; };
@@ -140,6 +143,7 @@
 				07E0417E26BF4CE800093289 /* ReviewDetail.swift */,
 				07E0415026BF4AB600093289 /* ReviewList.swift */,
 				07E0418526BF4EF200093289 /* ReviewRow.swift */,
+				075A147C26C0F52700F69F0C /* StarRatingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -244,6 +248,7 @@
 				07E0416526BF4AB700093289 /* IAteApp.swift in Sources */,
 				07E0416926BF4AB700093289 /* PersistenceController.swift in Sources */,
 				075A147726C0EA2600F69F0C /* NSManagedObjectContext+Saving.swift in Sources */,
+				075A147D26C0F52700F69F0C /* StarRatingView.swift in Sources */,
 				07E0416326BF4AB700093289 /* I_Ate.xcdatamodeld in Sources */,
 				07E0417F26BF4CE800093289 /* ReviewDetail.swift in Sources */,
 				07E0418626BF4EF200093289 /* ReviewRow.swift in Sources */,
@@ -258,6 +263,7 @@
 				07E0416626BF4AB700093289 /* IAteApp.swift in Sources */,
 				07E0416A26BF4AB700093289 /* PersistenceController.swift in Sources */,
 				075A147826C0EA2600F69F0C /* NSManagedObjectContext+Saving.swift in Sources */,
+				075A147E26C0F52700F69F0C /* StarRatingView.swift in Sources */,
 				07E0416426BF4AB700093289 /* I_Ate.xcdatamodeld in Sources */,
 				07E0418026BF4CE800093289 /* ReviewDetail.swift in Sources */,
 				07E0418726BF4EF200093289 /* ReviewRow.swift in Sources */,
